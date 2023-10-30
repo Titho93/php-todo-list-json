@@ -7,4 +7,3 @@ Creare una web-app che permetta di leggere e scrivere una lista di Todo.
 2. la pagina _index.php_ comunica correttamente con script PHP.
 3. “testare” l’invio di un nuovo task, sapendo che manca comunque la persistenza lato server.
 4. lettura della lista da un file JSON.
-   s
