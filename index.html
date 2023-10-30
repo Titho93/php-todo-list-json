@@ -25,7 +25,7 @@
                 <li v-for="(item, index) in list">{{ item }}</li>
             </ul>
         </div>
-        <input type="text" placeholder="Write and Press Enter to Send">
+        <input @keyup.enter="addTask" v-model.trim="newTodo" type="text" placeholder="Write and Press Enter to Send">
 
     </div>
 
