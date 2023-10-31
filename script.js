@@ -16,7 +16,13 @@ createApp({
       });
     },
     addTask() {
-      axios.post(this.apiUrl);
+      const data = new FormData();
+      data.append("todoItem", this.newTodo);
+
+      axios.post(this.apiUrl, data).then((result) => {
+        this.list = result.data;
+        this.newTodo = "";
+      });
     },
   },
   mounted() {
